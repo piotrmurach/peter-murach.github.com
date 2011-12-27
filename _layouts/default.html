@@ -1,22 +1,37 @@
 <!DOCTYPE HTML>
-<html>
+<html class='no-js' lang='en'>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"0>
-    <meta name="author" content="Piotr Murach" />
+    <meta charset='utf-8' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <meta content="Piotr Murach" name="author" />
+    <meta content='' name='description' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <title>{{ page.title }}</title>
+    <link href='css/application.css?v=1' media='all' rel='stylesheet' type='text/css'/>
     <script data-main="js/application" src="/js/require.js"></script>
   </head>
   <body>
-    <header>
+    <div id='container'>
+      <header>
 
-    </header>
+      </header>
 
-    <summary>
-      {{ content }}
-    </summary>
+      <div id='main' role='main'>
+        {{ content }}
+      </div>
 
-    <footer>
+      <footer>
 
-    </footer>
+      </footer>
+    </div>
+
+    <script type='text/javascript'>
+      //<![CDATA[
+        var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"],["_trackPageLoadTime"]];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+        s.parentNode.insertBefore(g,s)}(document,"script"));
+      //]]>
+    </script>
   </body>
 </html>
