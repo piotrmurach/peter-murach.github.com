@@ -1,0 +1,42 @@
+@import "compass/css3";
+
+body, select, input, textarea {
+  color: $font-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+a, a:active, a:visited { color: $link-color; }
+a:hover { color: $link-hover-color; }
+
+strong, th { font-weight: bold; }
+
+small {
+  @include font-size(11px);  // approx 85% when base-font-size eq 13px
+}
+
+input:valid, textarea:valid {}
+input:invalid, textarea:invalid {
+  @include border-radius(1px);
+  @include single-box-shadow(red, 0, 0, 5px, 0);
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+body {
+  
+}
+
+#container {
+  
+}
+
+header {
+  
+}
+
+#main {}
+
+footer {}
