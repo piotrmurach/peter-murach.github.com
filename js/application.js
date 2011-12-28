@@ -3,9 +3,8 @@ require([
   "libs/modernizr-2.0.6",
   "libs/plugins",
   "libs/respond.min"
-  ], function($) {
+  ], function() {
   //callback to fire up any extra scripts
   $(function(){
-    
   });
 });
