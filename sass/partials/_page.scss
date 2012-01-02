@@ -59,6 +59,13 @@ body {
   height: 750px;
   background: url('/images/github_background.png');
   @include centered;
+  img {
+    position: absolute;
+    top: 100px;
+    left: 567px;
+    width: 150px;
+    height: 100px;
+  }
 }
 
 header {
@@ -68,6 +75,13 @@ header {
   font: 2em/1 'LeagueGothicRegular', sans-serif;
   font-size: 3em;
   text-align: center;
+  h1 {
+    display: inline-block;
+    span {
+      display: inline-block;
+      width: 200px;
+    }
+  }
 }
 
 #main {

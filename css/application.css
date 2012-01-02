@@ -333,8 +333,16 @@ body {
   background: url("/images/github_background.png");
   margin: 0 auto;
 }
+/* line 62, ../sass/partials/_page.scss */
+#container img {
+  position: absolute;
+  top: 100px;
+  left: 567px;
+  width: 150px;
+  height: 100px;
+}
 
-/* line 64, ../sass/partials/_page.scss */
+/* line 71, ../sass/partials/_page.scss */
 header {
   position: absolute;
   top: 130px;
@@ -343,8 +351,17 @@ header {
   font-size: 3em;
   text-align: center;
 }
+/* line 78, ../sass/partials/_page.scss */
+header h1 {
+  display: inline-block;
+}
+/* line 80, ../sass/partials/_page.scss */
+header h1 span {
+  display: inline-block;
+  width: 200px;
+}
 
-/* line 73, ../sass/partials/_page.scss */
+/* line 87, ../sass/partials/_page.scss */
 #main {
   position: absolute;
   top: 190px;
@@ -352,19 +369,19 @@ header {
   width: 440px;
   margin: 0 auto;
 }
-/* line 79, ../sass/partials/_page.scss */
+/* line 93, ../sass/partials/_page.scss */
 #main p {
   margin: 10px 0;
   line-height: 1.4;
 }
 
-/* line 85, ../sass/partials/_page.scss */
+/* line 99, ../sass/partials/_page.scss */
 #links {
   position: absolute;
   bottom: 100px;
   left: 275px;
 }
-/* line 89, ../sass/partials/_page.scss */
+/* line 103, ../sass/partials/_page.scss */
 #links a#twitter {
   position: absolute;
   bottom: 0;
@@ -374,12 +391,12 @@ header {
   height: 120px;
   background: url("/images/github_icons.png") 0 0;
 }
-/* line 97, ../sass/partials/_page.scss */
+/* line 111, ../sass/partials/_page.scss */
 #links a#twitter:hover {
   height: 140px;
   background: url("/images/github_icons.png") 0 -115px;
 }
-/* line 102, ../sass/partials/_page.scss */
+/* line 116, ../sass/partials/_page.scss */
 #links a#linkedin {
   position: absolute;
   bottom: 0;
@@ -389,12 +406,12 @@ header {
   height: 120px;
   background: url("/images/github_icons.png") -100px 0;
 }
-/* line 110, ../sass/partials/_page.scss */
+/* line 124, ../sass/partials/_page.scss */
 #links a#linkedin:hover {
   height: 140px;
   background: url("/images/github_icons.png") -100px -115px;
 }
-/* line 115, ../sass/partials/_page.scss */
+/* line 129, ../sass/partials/_page.scss */
 #links a#facebook {
   position: absolute;
   bottom: 0;
@@ -404,12 +421,12 @@ header {
   height: 120px;
   background: url("/images/github_icons.png") -200px 0;
 }
-/* line 123, ../sass/partials/_page.scss */
+/* line 137, ../sass/partials/_page.scss */
 #links a#facebook:hover {
   height: 140px;
   background: url("/images/github_icons.png") -200px -115px;
 }
-/* line 128, ../sass/partials/_page.scss */
+/* line 142, ../sass/partials/_page.scss */
 #links a#github {
   position: absolute;
   bottom: 0;
@@ -419,12 +436,12 @@ header {
   height: 120px;
   background: url("/images/github_icons.png") -290px 0;
 }
-/* line 136, ../sass/partials/_page.scss */
+/* line 150, ../sass/partials/_page.scss */
 #links a#github:hover {
   height: 140px;
   background: url("/images/github_icons.png") -290px -115px;
 }
-/* line 141, ../sass/partials/_page.scss */
+/* line 155, ../sass/partials/_page.scss */
 #links a#contact {
   position: absolute;
   bottom: 0;
@@ -434,13 +451,13 @@ header {
   height: 120px;
   background: url("/images/github_icons.png") -390px 0;
 }
-/* line 149, ../sass/partials/_page.scss */
+/* line 163, ../sass/partials/_page.scss */
 #links a#contact:hover {
   height: 140px;
   background: url("/images/github_icons.png") -390px -115px;
 }
 
-/* line 157, ../sass/partials/_page.scss */
+/* line 171, ../sass/partials/_page.scss */
 footer {
   position: absolute;
   right: 0;
