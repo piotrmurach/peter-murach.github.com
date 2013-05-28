@@ -36,7 +36,7 @@ a:hover { color: $link-hover-color; }
 strong, th { font-weight: bold; }
 
 small {
-  @include font-size(11px);  // approx 85% when base-font-size eq 13px
+  font-size: $base-font-size;  // approx 85% when base-font-size eq 13px
 }
 
 input:valid, textarea:valid {}
@@ -70,11 +70,12 @@ body {
 
 header {
   position: absolute;
-  top: 130px;
+  top: 100px;
   left: 330px;
   font: 2em/1 'LeagueGothicRegular', sans-serif;
-  font-size: 3em;
+  font-size: 1.4em;
   text-align: center;
+  letter-spacing: 0.1em;
   h1 {
     display: inline-block;
     span {
@@ -93,6 +94,7 @@ header {
   p {
     margin: 10px 0;
     line-height: 1.4;
+    font-size: 1em;
   }
 }
 
@@ -100,72 +102,68 @@ header {
   position: absolute;
   bottom: 100px;
   left: 275px;
-  a#twitter{
+
+  .icon {
     position: absolute;
     bottom: 0;
     left: 0;
     display: block;
-    width: 100px;
-    height: 120px;
-    background: url('/images/github_icons.png') 0 0;
-    &:hover {
-      height: 140px;
-      background: url('/images/github_icons.png') 0 -115px;
-    }
-  }
-  a#linkedin{
-    position: absolute;
-    bottom: 0;
-    left: 115px;
-    display: block;
     width: 90px;
     height: 120px;
-    background: url('/images/github_icons.png') -100px 0;
-    &:hover {
-      height: 140px;
-      background: url('/images/github_icons.png') -100px -115px;
-    }
-  }
-  a#facebook {
-    position: absolute;
-    bottom: 0;
-    left: 230px;
-    display: block;
-    width: 90px;
-    height: 120px;
-    background: url('/images/github_icons.png') -200px 0;
-    &:hover {
-      height: 140px;
-      background: url('/images/github_icons.png') -200px -115px;
-    }
-  }
-  a#github {
-    position: absolute;
-    bottom: 0;
-    left: 338px;
-    display: block;
-    width: 90px;
-    height: 120px;
-    background: url('/images/github_icons.png') -290px 0;
-    &:hover {
-      height: 140px;
-      background: url('/images/github_icons.png') -290px -115px;
-    }
-  }
-  a#contact {
-    position: absolute;
-    bottom: 0;
-    left: 455px;
-    display: block;
-    width: 90px;
-    height: 120px;
-    background: url('/images/github_icons.png') -390px 0;
-    &:hover {
-      height: 140px;
-      background: url('/images/github_icons.png') -390px -115px;
-    }
-  }
+    background-image: url('/images/github_icons.png');
 
+    &:hover {
+      background-repeat: no-repeat;
+      height: 140px;
+    }
+
+    &.twitter {
+      background-position:  0 0;
+
+      &:hover {
+        background-position: 0 -115px;
+      }
+    }
+
+    &.linkedin {
+      left: 115px;
+      background-position: -98px 0;
+
+      &:hover {
+        background-position: -98px -115px;
+      }
+    }
+
+    &.facebook {
+      left: 230px;
+      background-position: -197px 0;
+
+      &:hover {
+        height: 140px;
+        background-position: -197px -115px;
+      }
+    }
+
+    &.github {
+      left: 342px;
+      background-position: -290px 0;
+
+      &:hover {
+        height: 140px;
+        background-position: -290px -115px;
+      }
+    }
+
+    &.flickr {
+      left: 455px;
+      background-position:  -385px 0;
+
+      &:hover {
+        height: 140px;
+        background-position: -385px -115px;
+      }
+    }
+  }
 }
 
 footer {
