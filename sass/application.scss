@@ -1,11 +1,9 @@
 // define default constants
 @import "partials/base";
-@import "html5-boilerplate";
+@import "h5bp";
 
-@include html5-boilerplate-reset;
-@include html5-boilerplate-fonts;
-@include html5-boilerplate-styles;
-@include html5-boilerplate-helpers;
+@include h5bp-normalize;
+@include h5bp-helpers;
 
 // import mixins
 @import "partials/fonts";
